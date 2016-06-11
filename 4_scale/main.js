@@ -14,8 +14,9 @@ var xScale = d3.scale.linear()
 // domain(0, 1) won't work
 
 var colorScale = d3.scale.linear()
-  .domain([0, 100])
-  .range(["red", "blue"]);  // it also works for colors!
+  .domain([0, 50, 100])
+  .range(["red", "white" , "blue"]);  // it also works for colors!
+
 
 
 // some data
@@ -29,13 +30,22 @@ var data = [
   {"position": 3,  "temp": 50, "importance": 8}
 ];
 
+var impMin = d3.min(data,  function (d) { return d.importance;});
+var impMax = d3.max(data,  function (d) { return d.importance;});
+
+var rScale = d3.scale.linear()
+    .domain([impMin, impMax]) /*dziedzina - domenta - czyli zakres wartości któ©e przyjmuje to co chcemy skalować*/
+    //.domain([1,9]) /*dziedzina - domenta - czyli zakres wartości któ©e przyjmuje to co chcemy skalować*/
+    .range([10,50]); /*to co zwraca dziedzina*/
+
+/*TODO wartości do domenty pobierać ze zmiennej data.importance */
 
 // addind dots that use scales
 svg.selectAll(".dot").data(data)
   .enter()
   .append("circle")
     .attr("class", "dot")
-    .attr("r", 25)
+    .attr("r", function (d) { return rScale(d.importance) })
     .attr("cx", function (d) { return xScale(d.position); })
     .attr("cy", 100)
     .style("fill", function (d) { return colorScale(d.temp); })
