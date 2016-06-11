@@ -16,9 +16,9 @@ svg.append("text")
   .on("click", function () {
     var newData = generateData();
     console.log("newData", newData);
-    draw1(newData);   // you will be changing this line
-    // draw2(newData);
-    // draw3(newData);
+    //draw1(newData);   // you will be changing this line
+    //draw2(newData);
+    draw3(newData);
   });
 
 
@@ -29,7 +29,7 @@ function draw1 (ourData) {
 
   boxes.enter()
     .append("rect")
-      .attr("class", "box")
+      .attr("class", "box")  // tworzymy pusty selector
       .attr("x", function (d, i) { return 50 + 100 * i; })
       .attr("y", function (d) { return 50 + d.shift; })
       .attr("width", 50)
@@ -44,16 +44,21 @@ function draw2 (ourData) {
 
   var boxes = svg.selectAll(".box").data(ourData);
 
-  boxes.enter()
+    /* tricky task*/
+    boxes.style( "fill", "yellow");
+
+    /* boxes.enter działa tylko na obiektach utworzonych w czasie kliknięcia*/
+    boxes.enter()
     .append("rect")
-      .attr("class", "box");
+      .attr("class", "box")
+      .attr("fill" , "red");
+
 
   boxes
     .attr("x", function (d, i) { return 50 + 100 * i; })
     .attr("y", function (d) { return 50 + d.shift; })
     .attr("width", 50)
-    .attr("height", function (d) { return d.height; })
-    .style("fill", "#1f77b4");
+    .attr("height", function (d) { return d.height; });
 
   boxes.exit()
     .remove();
@@ -65,28 +70,32 @@ function draw2 (ourData) {
 // - make new points red.
 
 
-// enter-update-exit pattern with transitions
+//// enter-update-exit pattern with transitions
 function draw3 (ourData) {
 
   var boxes = svg.selectAll(".box").data(ourData);
 
+    /* dla nowych elementów działa enter */
   boxes.enter()
     .append("rect")
       .attr("class", "box")
       .attr("x", function (d, i) { return 50 + 100 * i; })
       .attr("width", 50)
       .style("fill", "#1f77b4")
-      .style("opacity", 0);
+      .attr("y", function(d) { return 50 + d.shift - 400;});
 
+    /* płynne przejście to transition i duration określenie czasu */
   boxes
     .transition().duration(2000)
       .style("opacity", 1)
       .attr("y", function (d) { return 50 + d.shift; })
       .attr("height", function (d) { return d.height; });
 
+    /* usuwam po przejściu + kolor szary */
   boxes.exit()
+      .attr("class", "falling")
     .transition().duration(2000)
-      .style("fill", "gray")
+      .attr( "y" , function (d) { return 50 + d.shift * 200 })
       .remove();
 
 }
