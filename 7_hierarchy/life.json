@@ -14,7 +14,11 @@
         {"name": "horse", "size": 3},
         {"name": "mouse", "size": 1},
         {"name": "cat", "size": 2},
-        {"name": "dog", "size": 2}
+        {"name": "dog", "size": 2,
+          "children" : [
+            { "name": "bernardyn" , "size": 2},
+            { "name" : "zly", "size" : 3 }
+          ]}
       ]
     }
   ]

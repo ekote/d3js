@@ -1,6 +1,6 @@
 // 4_graph JavaScript file
 
-var width = 500;
+var width = 800;
 var height = 300;
 
 // categorical scale of colors
@@ -17,11 +17,13 @@ d3.json("lotr1.json", function(error, graph) {
       .attr("width", width)
       .attr("height", height);
 
+    console.log(" AREA w:" + width + "h" + height);
+
 
   // creating force object
   var force = d3.layout.force()
       .charge(-300)             // repulsion between nodes
-      .linkDistance(30)         // link distance when relaxed
+      .linkDistance(50)         // link distance when relaxed
       .size([width, height])    // size
       .nodes(graph.nodes)       // nodes
       .links(graph.links)       // links
@@ -30,23 +32,35 @@ d3.json("lotr1.json", function(error, graph) {
   // link (or edges) between nodes
   var link = svg.selectAll(".link")
       .data(graph.links);
-      
+
+      /* APPEND -  */
   link.enter().append("line")
-      .attr("class", "link")
+      .attr("class", "link") //dodajemy classe link do kazdej linii
       .style("stroke", "black")
       .style("stroke-width", function(d) { return Math.sqrt(d.count) / 2; });
 
   // nodes
   var node = svg.selectAll(".node")
       .data(graph.nodes);
-      
+
+
   node.enter().append("circle")
       .attr("class", "node")
-      .attr("r", 5)
-      .style("fill", function(d) { return color(0); })
+      .attr("r", function (d) { return d.talking_count / 3 ; })
+      .style("fill", function(d) { return color(d.race); })// d.race koloruje w rózny sposob! extra
       .call(force.drag)
       .append("title")
-        .text(function (d) { return d.name; });  // mouseover text
+        .text(function (d) { return d.name + d.talking_count; });  // mouseover text
+
+    var label = svg.selectAll(".label")
+        .data(graph.nodes);
+
+    label.enter()
+        .append("text")
+        .attr("class" , "label")
+        .style("font-size" , "10px");
+
+
 
   // what to do each iteration
   force.on("tick", function() {

@@ -14,6 +14,8 @@ Charts:
 Bar chart - Probably, the most common visualization tool is the bar chart. (the horizontal axis (X) represents the category data and the vertical axis (Y) represents a discrete value.)
 
 
+Teacher:
+http://p.migdal.pl/
 
 
 See more at:
