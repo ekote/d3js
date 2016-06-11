@@ -1,0 +1,21 @@
+{
+  "name": "creatures",
+  "children": [
+    {
+      "name": "plants",
+      "children": [
+        {"name": "oak", "size": 3},
+        {"name": "grass", "size": 1}
+      ]
+    },
+    {
+      "name": "animals",
+      "children": [
+        {"name": "horse", "size": 3},
+        {"name": "mouse", "size": 1},
+        {"name": "cat", "size": 2},
+        {"name": "dog", "size": 2}
+      ]
+    }
+  ]
+}

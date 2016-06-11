@@ -1,0 +1,397 @@
+{
+  "nodes": [
+    {
+      "talking_count": 34,
+      "name": "BOROMIR",
+      "race": "human"
+    },
+    {
+      "talking_count": 26,
+      "name": "STRIDER",
+      "race": "human"
+    },
+    {
+      "talking_count": 106,
+      "name": "FRODO",
+      "race": "hobbit"
+    },
+    {
+      "talking_count": 14,
+      "name": "ARWEN",
+      "race": "elf"
+    },
+    {
+      "talking_count": 18,
+      "name": "SARUMAN",
+      "race": "wizard"
+    },
+    {
+      "talking_count": 34,
+      "name": "BILBO",
+      "race": "hobbit"
+    },
+    {
+      "talking_count": 12,
+      "name": "ELROND",
+      "race": "elf"
+    },
+    {
+      "talking_count": 4,
+      "name": "BUTTERBUR",
+      "race": "human"
+    },
+    {
+      "talking_count": 16,
+      "name": "LEGOLAS",
+      "race": "elf"
+    },
+    {
+      "talking_count": 23,
+      "name": "GIMLI",
+      "race": "dwarf"
+    },
+    {
+      "talking_count": 32,
+      "name": "MERRY",
+      "race": "hobbit"
+    },
+    {
+      "talking_count": 34,
+      "name": "ARAGORN",
+      "race": "human"
+    },
+    {
+      "talking_count": 5,
+      "name": "GOLLUM",
+      "race": "hobbit"
+    },
+    {
+      "talking_count": 28,
+      "name": "PIPPIN",
+      "race": "hobbit"
+    },
+    {
+      "talking_count": 16,
+      "name": "GALADRIEL",
+      "race": "elf"
+    },
+    {
+      "talking_count": 53,
+      "name": "SAM",
+      "race": "hobbit"
+    },
+    {
+      "talking_count": 114,
+      "name": "GANDALF",
+      "race": "wizard"
+    }
+  ],
+  "links": [
+    {
+      "source": 8,
+      "more_likely_than_random": 2.614889705882353,
+      "count": 5,
+      "target": 0
+    },
+    {
+      "source": 8,
+      "more_likely_than_random": 1.111328125,
+      "count": 2,
+      "target": 10
+    },
+    {
+      "source": 6,
+      "more_likely_than_random": 1.4557748538011697,
+      "count": 7,
+      "target": 16
+    },
+    {
+      "source": 2,
+      "more_likely_than_random": 2.0129716981132075,
+      "count": 3,
+      "target": 7
+    },
+    {
+      "source": 10,
+      "more_likely_than_random": 4.127790178571429,
+      "count": 13,
+      "target": 13
+    },
+    {
+      "source": 0,
+      "more_likely_than_random": 2.0919117647058822,
+      "count": 3,
+      "target": 6
+    },
+    {
+      "source": 3,
+      "more_likely_than_random": 6.252747252747253,
+      "count": 8,
+      "target": 1
+    },
+    {
+      "source": 5,
+      "more_likely_than_random": 1.0459558823529411,
+      "count": 2,
+      "target": 14
+    },
+    {
+      "source": 7,
+      "more_likely_than_random": 2.6839622641509435,
+      "count": 4,
+      "target": 2
+    },
+    {
+      "source": 16,
+      "more_likely_than_random": 0.6510297482837528,
+      "count": 6,
+      "target": 9
+    },
+    {
+      "source": 4,
+      "more_likely_than_random": 1.8023879142300194,
+      "count": 13,
+      "target": 16
+    },
+    {
+      "source": 13,
+      "more_likely_than_random": 2.177295918367347,
+      "count": 3,
+      "target": 3
+    },
+    {
+      "source": 13,
+      "more_likely_than_random": 0.6709905660377359,
+      "count": 7,
+      "target": 2
+    },
+    {
+      "source": 10,
+      "more_likely_than_random": 0.6838942307692307,
+      "count": 2,
+      "target": 1
+    },
+    {
+      "source": 1,
+      "more_likely_than_random": 5.471153846153846,
+      "count": 7,
+      "target": 3
+    },
+    {
+      "source": 10,
+      "more_likely_than_random": 1.111328125,
+      "count": 2,
+      "target": 8
+    },
+    {
+      "source": 13,
+      "more_likely_than_random": 4.127790178571429,
+      "count": 13,
+      "target": 10
+    },
+    {
+      "source": 16,
+      "more_likely_than_random": 1.761609907120743,
+      "count": 24,
+      "target": 5
+    },
+    {
+      "source": 14,
+      "more_likely_than_random": 2.3192934782608696,
+      "count": 3,
+      "target": 9
+    },
+    {
+      "source": 16,
+      "more_likely_than_random": 1.8023879142300194,
+      "count": 13,
+      "target": 4
+    },
+    {
+      "source": 15,
+      "more_likely_than_random": 0.7668463611859838,
+      "count": 2,
+      "target": 3
+    },
+    {
+      "source": 9,
+      "more_likely_than_random": 0.5425247902364607,
+      "count": 5,
+      "target": 16
+    },
+    {
+      "source": 10,
+      "more_likely_than_random": 0.8387382075471698,
+      "count": 5,
+      "target": 15
+    },
+    {
+      "source": 2,
+      "more_likely_than_random": 1.2660199359202564,
+      "count": 25,
+      "target": 15
+    },
+    {
+      "source": 15,
+      "more_likely_than_random": 0.7894006659267481,
+      "count": 5,
+      "target": 11
+    },
+    {
+      "source": 9,
+      "more_likely_than_random": 1.0914322250639386,
+      "count": 3,
+      "target": 0
+    },
+    {
+      "source": 5,
+      "more_likely_than_random": 0.6315205327413984,
+      "count": 8,
+      "target": 2
+    },
+    {
+      "source": 2,
+      "more_likely_than_random": 0.9652846739490235,
+      "count": 41,
+      "target": 16
+    },
+    {
+      "source": 3,
+      "more_likely_than_random": 2.177295918367347,
+      "count": 3,
+      "target": 13
+    },
+    {
+      "source": 11,
+      "more_likely_than_random": 1.0914322250639386,
+      "count": 3,
+      "target": 9
+    },
+    {
+      "source": 9,
+      "more_likely_than_random": 2.3192934782608696,
+      "count": 3,
+      "target": 8
+    },
+    {
+      "source": 14,
+      "more_likely_than_random": 0.8387382075471698,
+      "count": 5,
+      "target": 2
+    },
+    {
+      "source": 15,
+      "more_likely_than_random": 1.3419811320754718,
+      "count": 8,
+      "target": 10
+    },
+    {
+      "source": 0,
+      "more_likely_than_random": 1.8190537084398977,
+      "count": 5,
+      "target": 9
+    },
+    {
+      "source": 10,
+      "more_likely_than_random": 1.4817708333333333,
+      "count": 2,
+      "target": 6
+    },
+    {
+      "source": 11,
+      "more_likely_than_random": 0.5525804661487237,
+      "count": 7,
+      "target": 2
+    },
+    {
+      "source": 0,
+      "more_likely_than_random": 3.19939446366782,
+      "count": 13,
+      "target": 11
+    },
+    {
+      "source": 1,
+      "more_likely_than_random": 1.445210449927431,
+      "count": 7,
+      "target": 15
+    },
+    {
+      "source": 11,
+      "more_likely_than_random": 2.4610726643598615,
+      "count": 10,
+      "target": 0
+    },
+    {
+      "source": 15,
+      "more_likely_than_random": 0.6583303666785333,
+      "count": 13,
+      "target": 2
+    },
+    {
+      "source": 5,
+      "more_likely_than_random": 1.6882094943240453,
+      "count": 23,
+      "target": 16
+    },
+    {
+      "source": 9,
+      "more_likely_than_random": 2.546675191815857,
+      "count": 7,
+      "target": 11
+    },
+    {
+      "source": 16,
+      "more_likely_than_random": 1.0398391812865497,
+      "count": 5,
+      "target": 6
+    },
+    {
+      "source": 1,
+      "more_likely_than_random": 0.7226052249637155,
+      "count": 7,
+      "target": 2
+    },
+    {
+      "source": 14,
+      "more_likely_than_random": 10.66875,
+      "count": 3,
+      "target": 12
+    },
+    {
+      "source": 11,
+      "more_likely_than_random": 3.660845588235294,
+      "count": 7,
+      "target": 8
+    },
+    {
+      "source": 8,
+      "more_likely_than_random": 1.546195652173913,
+      "count": 2,
+      "target": 9
+    },
+    {
+      "source": 1,
+      "more_likely_than_random": 1.17239010989011,
+      "count": 3,
+      "target": 13
+    },
+    {
+      "source": 2,
+      "more_likely_than_random": 0.6193759071117562,
+      "count": 6,
+      "target": 1
+    },_
+    {
+      "source": 2,
+      "more_likely_than_random": 1.0064858490566038,
+      "count": 6,
+      "target": 14
+    },
+    {
+      "source": 12,
+      "more_likely_than_random": 7.1125,
+      "count": 2,
+      "target": 14
+    }
+  ]
+}
