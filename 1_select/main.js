@@ -42,7 +42,7 @@ var rect = svg.append("rect")
    .style("stroke", "#1f77b4")
    .style("stroke-width", "4px");
 
-// "rect" -
+// "rect" - rectangle
 
 // NOTE: the last object is being drawn on the top
 
@@ -50,9 +50,20 @@ var rect = svg.append("rect")
 // 1. Make rect semitransparent (style "opacity" with value 0.5).
 // 2. Draw a new green circle with r=25, cx=50, cy=100.
 
-svg.select("circle")
+svg.append("circle")
     .attr("cx", 50)
     .attr("cy", 100)
     .attr("r", 25)
     .style("fill", "green")
     .style("opacity", 0.5);
+
+svg.append("ellipse")
+    .attr("cx", 150)
+    .attr("cy", 160)
+    .attr("rx", 25)
+    .attr("ry", 5)
+    .style("fill", "green")
+    .style("opacity", 0.5);
+
+
+/* see more at https://www.dashingd3js.com/svg-basic-shapes-and-d3js */
